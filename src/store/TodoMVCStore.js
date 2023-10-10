@@ -1,6 +1,6 @@
 import { defineStore } from 'pinia'
 
-const TodoMVCStore = defineStore('TodoMVC',{
+export const TodoMVCStore = defineStore('TodoMVC',{
     state : ()=>(
         {
             content:["pinia","vuex","vite","webpack"]
@@ -10,8 +10,9 @@ const TodoMVCStore = defineStore('TodoMVC',{
         add(newContent){
             this.content.push(newContent);
         },
-        delete(oldContent){
+        remove(oldContent){
             this.content = this.content.filter(item => item!== oldContent);
         },
     },
 })
+
