@@ -136,7 +136,7 @@ h1 {
 .forecast-item {
     background-color: #4453;
     border-radius: 10px;
-    padding: 10px;
+    padding: 20px;
     border: 1px solid #446;
 }
 
